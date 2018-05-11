@@ -1,0 +1,33 @@
+:root {
+  --border-bottom: #333; 
+    --initial-bg-color: gold;    
+}
+body {
+   background-color: var(--initial-bg-color);
+}
+.wrapper {
+    width: 90%;
+    height: 90%;
+    width: 95vw;
+    height: 95vh;
+    
+}
+.form {
+    display: block;
+}
+
+@supports(display: flex) {
+    .wrapper,
+    .form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.form input {
+    border: 0;
+    border-bottom: 1px solid var(--border-bottom);
+    margin-bottom: 8px;
+}
