@@ -35,10 +35,10 @@ function hexConversion(hex) {
     
     for(let i=0; i<hexArr.length; i++) {
         
-        let xter = hexArr[i].toUpperCase();
+        //let xter = hexArr[i].toUpperCase();
         
         //match each hex character with the index array above go validate keyed ones
-        let hexIndex = inArray(xter, index);
+        let hexIndex = inArray(hexArr[i].toUpperCase(), index);
         
         //check for true and number zero as some hex have zero in them
         if (hexIndex || hexIndex === 0) {
